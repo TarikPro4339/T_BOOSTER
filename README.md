@@ -1,47 +1,61 @@
-# T-BOOSTER v1.0.0 (Beta 2)
+# T-BOOSTER — Yeni Gelen Özellikler
+**Sürüm:** v1.0.0 &nbsp;•&nbsp; **Yapımcı:** TarikPro43391
 
-**Yapımcı:** TarikPro43391
+---
 
-T-BOOSTER v1.0.0 (Beta 2) yayında. Yeni logo, sade arayüz ve 5 yeni özellikle geliyor.
+## 🧰 Araç Kutusu (5 yeni özellik)
 
-## ✨ Yenilikler
+Kenar çubuğundaki **Araç Kutusu** sayfasına eklendi.
 
-### 🧰 Araç Kutusu (5 yeni özellik)
+### 1. Sistem Sağlık Puanı
+RAM kullanımı, disk boş alanı, açık kalma süresi, başlangıç uygulaması sayısı ve geçici dosya miktarına göre **0-100 arası puan** hesaplar. Puanı bir halka grafikte gösterir, altında da neyi düzeltmen gerektiğini yazar (örn. "Sistem diski boş alanı düşük — geçici dosyaları temizle").
 
-1. **Sistem Sağlık Puanı:** RAM, disk, açık kalma süresi, başlangıç uygulamaları ve geçici dosyalara göre 0-100 puan verir. Neyi düzeltmen gerektiğini de söyler.
-2. **Geçici Dosya Temizleyici:** Temp, Windows Temp, çökme dökümleri ve hata raporlarını temizler. Yalnızca 1 günden eski dosyaları siler. Önce tarama yapıp ne kadar yer açılacağını gösterir.
-3. **DNS ve Ağ Hızlandırıcı:** DNS önbelleğini temizler, popüler DNS sunucularının gecikmesini ölçer ve en hızlısını işaretler.
-4. **Büyük Dosya Bulucu:** Seçtiğin klasördeki en büyük dosyaları listeler ve konumunu açar. Hiçbir şey silmez.
-5. **Arka Plan Uygulama Avcısı:** RAM'i en çok kullanan uygulamaları gösterir, oyun öncesi kapatılabilecekleri işaretler. Sistem işlemleri korumalıdır.
+### 2. Geçici Dosya Temizleyici
+Kullanıcı Temp, Windows Temp, çökme dökümleri ve Windows hata raporlarını temizler.
+- Yalnızca **1 günden eski** dosyalar silinir
+- Kullanımdaki dosyalar otomatik atlanır
+- Önce **TARA** ile ne kadar yer açılacağını gösterir, sonra onay ister
+- İstersen geri dönüşüm kutusunu da boşaltabilir (varsayılan kapalı)
 
-### 🎨 Arayüz
+### 3. DNS ve Ağ Hızlandırıcı
+- Windows DNS önbelleğini tek tıkla temizler
+- Cloudflare, Google, Quad9, OpenDNS ve AdGuard sunucularının gecikmesini ölçüp **en hızlısını işaretler**
+- DNS'i otomatik değiştirmez, Windows ağ ayarlarını açar
 
-* Sade tema: Daha temiz, modern ve göz yormayan tasarım.
-* Tek renk Toggle'lar (Açma/Kapama düğmeleri): Hangi özellik olursa olsun açık konumdaki tüm düğmeler aynı mavi renge (`#2f86ff`) sabitlendi.
-* Açık temada beyaz ikonlar.
-* Pürüzsüz açma/kapama animasyonları, yumuşak yuvarlak kartlar, kaydırmalı Koyu/Açık seçici.
-* Keskin vektör menü ikonları.
+### 4. Büyük Dosya Bulucu
+Seçtiğin klasördeki en büyük dosyaları listeler ve dosya gezgininde konumunu açar. **Hiçbir şeyi silmez**, sadece gösterir.
 
-### 🖼️ Logo ve ikonlar
+### 5. Arka Plan Uygulama Avcısı
+RAM'i en çok kullanan uygulamaları listeler; tarayıcı, sohbet uygulaması gibi oyun öncesi kapatılabilecekleri işaretler. Seçileni onay alarak kapatır. **Sistem işlemleri korumalıdır**, yanlışlıkla kapatılamaz.
 
-* T-BOOSTER logosu ve çok boyutlu uygulama ikonu (16-256 px)
-* Acer, ASUS, Dell, HP, Intel, Lenovo, MSI, NVIDIA ve AMD logoları
-* Roblox ve Minecraft ikonları
-* Masaüstü kısayolu için `T_BOOSTER_KISAYOL_OLUSTUR.bat`
+---
 
-## ⚠️ Bilinmesi gerekenler
+## 🖥️ Sistem Bilgisi Kartları
 
-* ASRock, Biostar, EVGA ve Gigabyte için resmî logo yerine yazı logoları kullanıldı.
-* Sistemde değişiklik yapmadan önce Windows geri yükleme noktası oluşturman önerilir.
-* Uygulama verileri `ProgramData\TBooster` klasöründe tutulur. Başka bir uygulamadan alınmış yedekler burada görünmez.
-* *Not: Sürüm rozetleri ve içerikteki Beta ibareleri tamamen temizlenmiş olsa da, ana çalıştırma dosyasının adı uyumluluk için şimdilik `T_BOOSTER_V1_0_0_BETA.py` olarak bırakılmıştır. Dilersen bu dosyanın adını da güncelleyebilirsin.*
+Kontrol Merkezi sayfasına, üst metrik kartlarının altına 5 yeni bilgi kartı eklendi:
 
-## 📋 Gereksinimler
+| Kart | İçerik |
+|---|---|
+| 🧾 BIOS Sürümü | Üretici + sürüm numarası |
+| 🧩 Anakart Modeli | Üretici + model |
+| 🧠 İşlemci Modeli | Tam CPU adı |
+| 💾 RAM Kapasitesi | Toplam kapasite + modül sayısı |
+| 🪟 İşletim Sistemi | Windows sürümü + build numarası |
 
-* Windows 10 / 11
-* Python 3 (Pillow kuruluysa yumuşak arayüz açılır: `pip install pillow`)
-* Yönetici izni
+---
 
-## ▶️ Başlatma
+## 🎨 Görsel Yenilikler
+- **Yeni logo** ve çok boyutlu uygulama ikonu (16-256 px)
+- **Sade, düz (flat) arayüz:** koyu temada VS Code tarzı mat siyah, açık temada gözü yormayan kırık beyaz
+- Açma/kapama düğmeleri artık **hepsi mavi** (açık durumda)
+- Menü ikonları yeniden çizildi, keskin ve net
+- Marka logoları (Acer, ASUS, Dell, HP, Intel, Lenovo, MSI, NVIDIA, AMD) ve Roblox/Minecraft ikonları güncellendi
+- Masaüstü kısayolu oluşturucu (`T_BOOSTER_KISAYOL_OLUSTUR.bat`)
 
-`T_BOOSTER_BASLAT.bat` dosyasını çalıştır. İstersen önce `T_BOOSTER_KISAYOL_OLUSTUR.bat` ile masaüstü kısayolu oluştur.
+---
+
+## 🛠️ Arka Plan Düzeltmeleri
+- **Virüs uyarısı:** Programın çekirdek kodu artık şifrelenip gizlenmiyor; sıradan, okunabilir bir dosya olarak geliyor. Bu, Windows Defender'ın "dropper" şüphesiyle yanlış pozitif vermesinin en büyük sebebiydi.
+- **"Okunamadı" hatası:** BIOS/Anakart/İşlemci/RAM/Disk bilgilerini okuyan koddaki bir hata düzeltildi; artık bu bilgiler doğru şekilde geliyor.
+- Discord bağlantıları tamamen kaldırıldı
+- Tüm "EFG" ve "Beta" ifadeleri temizlendi, sürüm **v1.0.0 (final)** oldu
