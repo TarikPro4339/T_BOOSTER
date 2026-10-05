@@ -57,5 +57,3 @@ Kontrol Merkezi sayfasına, üst metrik kartlarının altına 5 yeni bilgi kart�
 ## 🛠️ Arka Plan Düzeltmeleri
 - **Virüs uyarısı:** Programın çekirdek kodu artık şifrelenip gizlenmiyor; sıradan, okunabilir bir dosya olarak geliyor. Bu, Windows Defender'ın "dropper" şüphesiyle yanlış pozitif vermesinin en büyük sebebiydi.
 - **"Okunamadı" hatası:** BIOS/Anakart/İşlemci/RAM/Disk bilgilerini okuyan koddaki bir hata düzeltildi; artık bu bilgiler doğru şekilde geliyor.
-- Discord bağlantıları tamamen kaldırıldı
-- Tüm "EFG" ve "Beta" ifadeleri temizlendi, sürüm **v1.0.0 (final)** oldu
