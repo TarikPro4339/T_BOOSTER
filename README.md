@@ -1,38 +1,40 @@
-# T-BOOSTER — Yeni Gelen Özellikler
-**Sürüm:** v1.0.0 &nbsp;•&nbsp; **Yapımcı:** TarikPro43391
+# T-Booster — Özellikler
+**Sürüm:** v1.0.1 &nbsp;•&nbsp; **Yapımcı:** TarikPro43391
 
 ---
 
-## 🧰 Araç Kutusu (5 yeni özellik)
+## 🚀 Boost ve Kurtarma
+- **Gerçek FPS Modu** — GPU tercihi, güç planı, Game Mode, DVR ve daha fazlasını tek seferde ayarlar
+- **Akıllı Boost** — temel FPS, oyun ve güvenli Windows ayarlarını uygular
+- **Ultra Boost Max** — 200'den fazla tweak'i gelişmiş CPU/NVMe/oyun ayarlarıyla birlikte uygular
+- **Güvenli geri alma** — yapılan her değişiklik kayıt altında, istediğin zaman eski haline döndürebilirsin
 
-Kenar çubuğundaki **Araç Kutusu** sayfasına eklendi.
+---
+
+## 🧰 Araç Kutusu (5 özellik)
 
 ### 1. Sistem Sağlık Puanı
-RAM kullanımı, disk boş alanı, açık kalma süresi, başlangıç uygulaması sayısı ve geçici dosya miktarına göre **0-100 arası puan** hesaplar. Puanı bir halka grafikte gösterir, altında da neyi düzeltmen gerektiğini yazar (örn. "Sistem diski boş alanı düşük — geçici dosyaları temizle").
+RAM kullanımı, disk boş alanı, açık kalma süresi, başlangıç uygulaması sayısı ve geçici dosya miktarına göre **0-100 arası puan** hesaplar. Puanı bir halka grafikte gösterir, altında neyi düzeltmen gerektiğini yazar.
 
 ### 2. Geçici Dosya Temizleyici
 Kullanıcı Temp, Windows Temp, çökme dökümleri ve Windows hata raporlarını temizler.
-- Yalnızca **1 günden eski** dosyalar silinir
-- Kullanımdaki dosyalar otomatik atlanır
+- Yalnızca **1 günden eski** dosyalar silinir, kullanımdaki dosyalar atlanır
 - Önce **TARA** ile ne kadar yer açılacağını gösterir, sonra onay ister
 - İstersen geri dönüşüm kutusunu da boşaltabilir (varsayılan kapalı)
 
 ### 3. DNS ve Ağ Hızlandırıcı
-- Windows DNS önbelleğini tek tıkla temizler
-- Cloudflare, Google, Quad9, OpenDNS ve AdGuard sunucularının gecikmesini ölçüp **en hızlısını işaretler**
-- DNS'i otomatik değiştirmez, Windows ağ ayarlarını açar
+Windows DNS önbelleğini temizler; Cloudflare, Google, Quad9, OpenDNS ve AdGuard sunucularının gecikmesini ölçüp en hızlısını işaretler. DNS'i otomatik değiştirmez, Windows ağ ayarlarını açar.
 
 ### 4. Büyük Dosya Bulucu
-Seçtiğin klasördeki en büyük dosyaları listeler ve dosya gezgininde konumunu açar. **Hiçbir şeyi silmez**, sadece gösterir.
+Seçtiğin klasördeki en büyük dosyaları listeler ve dosya gezgininde konumunu açar. **Hiçbir şeyi silmez.**
 
 ### 5. Arka Plan Uygulama Avcısı
-RAM'i en çok kullanan uygulamaları listeler; tarayıcı, sohbet uygulaması gibi oyun öncesi kapatılabilecekleri işaretler. Seçileni onay alarak kapatır. **Sistem işlemleri korumalıdır**, yanlışlıkla kapatılamaz.
+RAM'i en çok kullanan uygulamaları listeler, oyun öncesi kapatılabilecekleri işaretler. Seçileni onay alarak kapatır. **Sistem işlemleri korumalıdır.**
 
 ---
 
-## 🖥️ Sistem Bilgisi Kartları
-
-Kontrol Merkezi sayfasına, üst metrik kartlarının altına 5 yeni bilgi kartı eklendi:
+## 🖥️ Sistem Bilgisi
+Kontrol Merkezi'nde canlı CPU, GPU, RAM ve disk kullanım kartlarının yanında:
 
 | Kart | İçerik |
 |---|---|
@@ -42,18 +44,29 @@ Kontrol Merkezi sayfasına, üst metrik kartlarının altına 5 yeni bilgi kart�
 | 💾 RAM Kapasitesi | Toplam kapasite + modül sayısı |
 | 🪟 İşletim Sistemi | Windows sürümü + build numarası |
 
----
-
-## 🎨 Görsel Yenilikler
-- **Yeni logo** ve çok boyutlu uygulama ikonu (16-256 px)
-- **Sade, düz (flat) arayüz:** koyu temada VS Code tarzı mat siyah, açık temada gözü yormayan kırık beyaz
-- Açma/kapama düğmeleri artık **hepsi mavi** (açık durumda)
-- Menü ikonları yeniden çizildi, keskin ve net
-- Marka logoları (Acer, ASUS, Dell, HP, Intel, Lenovo, MSI, NVIDIA, AMD) ve Roblox/Minecraft ikonları güncellendi
-- Masaüstü kısayolu oluşturucu (`T_BOOSTER_KISAYOL_OLUSTUR.bat`)
+Ayrıca: T-Booster Disk Info sayfasında SMART/sağlık verileri, Performans Araçları'nda sürücü ve donanım analizi.
 
 ---
 
-## 🛠️ Arka Plan Düzeltmeleri
-- **Virüs uyarısı:** Programın çekirdek kodu artık şifrelenip gizlenmiyor; sıradan, okunabilir bir dosya olarak geliyor. Bu, Windows Defender'ın "dropper" şüphesiyle yanlış pozitif vermesinin en büyük sebebiydi.
-- **"Okunamadı" hatası:** BIOS/Anakart/İşlemci/RAM/Disk bilgilerini okuyan koddaki bir hata düzeltildi; artık bu bilgiler doğru şekilde geliyor.
+## 🎮 Oyun ve Donanım
+- **Oyun Modu** — tek tıkla oyun odaklı sistem ayarları
+- **Roblox FPS Kilidi** — FPS sınırlamasını kaldırır
+- **Windows Ayarları** — ince Windows ayarları
+- **200 Tweak Paketi** — performans, ağ, gizlilik ve arayüz kategorilerinde kapsamlı ayar seti
+
+---
+
+## 🎨 Arayüz
+- **Sade, düz (flat) tasarım** — koyu temada VS Code tarzı mat siyah, açık temada gözü yormayan kırık beyaz
+- Açma/kapama düğmeleri her zaman **mavi** (açık durumda)
+- Akıcı açılış animasyonu (pencere yeniden boyutlanmadan, yumuşakça belirir) ve sayfa geçişleri
+- Yeniden çizilmiş, keskin menü ikonları
+- Kendi logosu ve çok boyutlu uygulama ikonu
+- Marka logoları (Acer, ASUS, Dell, HP, Intel, Lenovo, MSI, NVIDIA, AMD) ve Roblox/Minecraft ikonları
+
+---
+
+## 📦 Kurulum
+- `t-booster.bat` — programı başlatır
+- `T_BOOSTER_KISAYOL_OLUSTUR.bat` — masaüstüne T-Booster logolu kısayol oluşturur
+- Veri toplama yok — tamamen yerel çalışır
