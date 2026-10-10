@@ -1,5 +1,5 @@
 # T-Booster — Özellikler
-**Sürüm:** v1.0.1 &nbsp;•&nbsp; **Yapımcı:** TarikPro43391
+**Sürüm:** v1.0.2 &nbsp;•&nbsp; **Yapımcı:** TarikPro43391
 
 ---
 
@@ -11,7 +11,7 @@
 
 ---
 
-## 🧰 Araç Kutusu (5 özellik)
+## 🧰 Araç Kutusu (7 özellik)
 
 ### 1. Sistem Sağlık Puanı
 RAM kullanımı, disk boş alanı, açık kalma süresi, başlangıç uygulaması sayısı ve geçici dosya miktarına göre **0-100 arası puan** hesaplar. Puanı bir halka grafikte gösterir, altında neyi düzeltmen gerektiğini yazar.
@@ -30,6 +30,12 @@ Seçtiğin klasördeki en büyük dosyaları listeler ve dosya gezgininde konumu
 
 ### 5. Arka Plan Uygulama Avcısı
 RAM'i en çok kullanan uygulamaları listeler, oyun öncesi kapatılabilecekleri işaretler. Seçileni onay alarak kapatır. **Sistem işlemleri korumalıdır.**
+
+### 6. Başlangıç Uygulamaları
+Windows açılırken otomatik çalışan programları listeler (OneDrive, Discord vs.), hangisinin açık hangisinin kapalı olduğunu gösterir. Seçtiğini açıp kapatabilirsin. Görev Yöneticisi’nin kullandığı aynı resmi Windows yöntemiyle program kaydını silmeden, sadece Windows’un kendi “açık/kapalı” bayrağını çevirerek işlem yapar. Tamamen güvenli ve geri alınabilirdir.
+
+### 7. Kayıtlı Wi-Fi Şifreleri
+Bu bilgisayara daha önce bağlanılmış Wi-Fi ağlarının şifrelerini gösterir (Windows'un kendi netsh komutunu kullanır). Şifreler varsayılan olarak noktalarla gizli gelir, gizlilik için sadece “GÖSTER/GİZLE” butonuna basıldığında görünür.
 
 ---
 
