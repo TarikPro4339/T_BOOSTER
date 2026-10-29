@@ -1,6 +1,6 @@
 # T-Booster
 
-**Sürüm:** v1.0.5 &nbsp;•&nbsp; **Yapımcı:** TarikPro43391
+**Sürüm:** v1.0.8 &nbsp;•&nbsp; **Yapımcı:** TarikPro43391
 
 T-Booster, Windows için sade ve hızlı bir performans/sistem bakım aracıdır. Tek bir pencereden; sistemini hızlandırmanı, donanımını incelemeni, gereksiz dosyaları temizlemeni ve geri alınabilir ayarlarla oynamanı sağlar. Kapalı kaynaklı bir `.exe` değil, sıradan bir Python programıdır — tüm kodu açık ve okunabilir.
 
@@ -13,7 +13,7 @@ T-Booster, Windows için sade ve hızlı bir performans/sistem bakım aracıdır
 
 Python 3 kurulu değilse program seni bilgilendirir. Elle çalıştırmak istersen:
 ```
-python T_BOOSTER_V1_0_5.py
+python T_BOOSTER_V1_0_8.py
 ```
 
 ### Gereksinimler
@@ -21,23 +21,43 @@ python T_BOOSTER_V1_0_5.py
 - Python 3
 - *(Önerilir)* Pillow — pürüzsüz arayüz için: `pip install pillow`
 
+Program yönetici yetkisiyle açılır; sistem ayarlarını değiştirebilmesi için bu gereklidir.
+
 ---
 
-## 🧰 Araç Kutusu — 11 özellik
+## 🧰 Araç Kutusu — 16 özellik
 
+### Bakım ve temizlik
 | # | Özellik | Ne yapar |
 |---|---|---|
 | 1 | **Sistem Sağlık Puanı** | RAM, disk, açık kalma süresi, başlangıç uygulamaları ve geçici dosyalara göre 0-100 arası puan verir |
 | 2 | **Geçici Dosya Temizleyici** | Temp, Windows Temp, çökme dökümleri ve hata raporlarını temizler (yalnızca 1 günden eski dosyalar) |
-| 3 | **DNS & Ağ Hızlandırıcı** | DNS önbelleğini temizler, popüler DNS sunucularının gecikmesini ölçüp en hızlısını işaretler |
 | 4 | **Büyük Dosya Bulucu** | Seçtiğin klasördeki en büyük dosyaları listeler — hiçbir şeyi silmez |
+| 12 | **Yinelenen Dosya Bulucu** | Aynı içeriğe sahip dosyaları bulur, kopyalarla boşa giden alanı gösterir — hiçbir şeyi silmez |
+| 15 | **Sistem Dosyası Denetleyici (SFC)** | Bozuk Windows sistem dosyalarını denetler; istersen onarır. İlerleme çubuğu ve durdur düğmesi vardır |
+
+### Performans ve güç
+| # | Özellik | Ne yapar |
+|---|---|---|
 | 5 | **Arka Plan Uygulama Avcısı** | RAM'i en çok kullanan uygulamaları listeler, seçileni kapatır (sistem işlemleri korumalıdır) |
 | 6 | **Başlangıç Uygulamaları** | Run kayıtlarını ve Başlangıç klasörünü listeler, yayıncı/etki tahmini sunar; kapattığın her girdi yedeklenir |
-| 7 | **Kayıtlı Wi-Fi Şifreleri** | Bu bilgisayara kayıtlı ağların şifrelerini gösterir (varsayılan gizli, GÖSTER'e basman gerekir) |
-| 8 | **Geri Yükleme Noktası Oluştur** | Tek tıkla Windows Sistem Geri Yükleme noktası oluşturur |
 | 9 | **Güç Planı Yöneticisi** | Dengeli / Yüksek Performans / Güç Tasarrufu planları arasında geçiş yapar |
-| 10 | **İnternet Hız Testi** | İndirme, yükleme ve gecikmeyi ölçer |
 | 11 | **Pil Sağlığı Raporu** | Dizüstü bilgisayarlarda tasarım kapasitesi, güncel kapasite ve döngü sayısını gösterir |
+
+### Ağ ve güvenlik
+| # | Özellik | Ne yapar |
+|---|---|---|
+| 3 | **DNS & Ağ Hızlandırıcı** | DNS önbelleğini temizler, popüler DNS sunucularının gecikmesini ölçüp en hızlısını işaretler |
+| 7 | **Kayıtlı Wi-Fi Şifreleri** | Bu bilgisayara kayıtlı ağların şifrelerini gösterir (varsayılan gizli, GÖSTER'e basman gerekir) |
+| 10 | **İnternet Hız Testi** | İndirme, yükleme ve gecikmeyi ölçer |
+| 13 | **Açık Ağ Bağlantıları** | Hangi uygulamanın hangi porta/adrese bağlı olduğunu listeler; tüm ağ arayüzlerine açık dinleyen portları vurgular — yalnızca okur |
+| 14 | **Dosya Karma (Hash) Doğrulayıcı** | MD5, SHA-1 ve SHA-256 hesaplar; yapıştırdığın karmayla karşılaştırıp dosyanın değişip değişmediğini söyler |
+| 16 | **Hosts Dosyası Denetimi** | Yönlendirme ve engellemeleri listeler; bilinen bir siteyi başka bir IP'ye yönlendiren satırı şüpheli olarak işaretler — yalnızca okur |
+
+### Güvenlik ağı
+| # | Özellik | Ne yapar |
+|---|---|---|
+| 8 | **Geri Yükleme Noktası Oluştur** | Tek tıkla Windows Sistem Geri Yükleme noktası oluşturur |
 
 ---
 
@@ -68,8 +88,10 @@ Kontrol Merkezi'nde canlı CPU/GPU/RAM/disk kartlarının yanında: **BIOS sür�
 
 ## ⚠️ Bilinmesi gerekenler
 - Bazı bilgisayarlarda Windows/Defender bu programı yanlışlıkla virüs olarak işaretleyebilir (yanlış pozitif). Program kapalı kaynaklı bir `.exe` değil, sıradan bir Python betiğidir — kaynağını herhangi bir metin düzenleyicide inceleyebilirsin. Uyarı çıkarsa "Daha fazla bilgi" → "Yine de çalıştır" seçeneğini kullanabilir veya klasörü Defender hariç tutma listesine ekleyebilirsin.
-- Değişiklik yapmadan önce bir Windows geri yükleme noktası oluşturman önerilir (Araç Kutusu'nda tek tıkla yapabilirsin).
+- Değişiklik yapmadan önce bir Windows geri yükleme noktası oluşturman önerilir (Araç Kutusu'nda tek tıkla yapabilirsin). Özellikle SFC onarımından önce.
+- SFC onarımı 10-30 dakika sürebilir; bitene kadar pencereyi kapatma.
 - Pil sağlığı raporu yalnızca dizüstü bilgisayarlarda çalışır.
+- Dosya bulucular (büyük dosya, yinelenen dosya), ağ bağlantıları ve hosts denetimi yalnızca okur; hiçbir dosyayı silmez veya değiştirmez.
 - Discord bağlantısı yok, veri toplama yok — tamamen yerel çalışır.
 
 ---
@@ -79,7 +101,7 @@ Kontrol Merkezi'nde canlı CPU/GPU/RAM/disk kartlarının yanında: **BIOS sür�
 |---|---|
 | `t-booster.bat` | Programı başlatır |
 | `T_BOOSTER_KISAYOL_OLUSTUR.bat` | Masaüstü kısayolu oluşturur |
-| `T_BOOSTER_V1_0_5.py` | Ana uygulama |
+| `T_BOOSTER_V1_0_8.py` | Ana uygulama |
 | `tb_core.py` | Çekirdek sistem/donanım modülü |
 | `tb_tools.py`, `tb_suite.py`, `tb_features.py` | Araç ve özellik modülleri |
 | `TB.ico`, `TB_logo.png` | Uygulama ikonu ve logosu |
