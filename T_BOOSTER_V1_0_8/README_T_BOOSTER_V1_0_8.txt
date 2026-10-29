@@ -1,0 +1,42 @@
+T-BOOSTER v1.0.8
+Yapımcı: TarikPro43391
+
+Başlatma:
+0) (İsteğe bağlı) T_BOOSTER_KISAYOL_OLUSTUR.bat dosyasını çalıştır: masaüstüne T-Booster logolu bir kısayol oluşturur
+1) t-booster.bat dosyasını aç
+veya
+2) T_BOOSTER_V1_0_8.py dosyasını Python 3 ile çalıştır
+
+Özellikler:
+- Modern ve sade üst başlık, kompakt sol menü ve aktif sayfa vurgusu
+- Sade, düz (flat) modern arayüz: koyu temada VS Code tarzı mat siyah (#1E1E1E/#252526), açık temada gözü yormayan kırık beyaz (#FAFAFA/#F5F5F5)
+- Daha akıcı açılış ve sayfa geçiş animasyonları (pencere artık boyut değiştirerek değil, sadece yumuşak belirerek açılır)
+- Sistem Bilgisi kartları: BIOS sürümü, anakart modeli, işlemci modeli, RAM kapasitesi, işletim sistemi sürümü
+- Pürüzsüz (antialiased) açma/kapama düğmeleri, yumuşak yuvarlak kartlar ve keskin vektör menü ikonları
+- Koyu / açık tema seçimi
+- Okunabilir 2x2 canlı CPU, GPU, RAM ve disk kartları
+- Hover efektli boost butonları
+- Durum ve ilerleme bölümü
+- Gerçek FPS modu, güvenli geri alma, 200 tweak paketi ve donanım analizi
+
+Araç Kutusu (16 özellik):
+1) Sistem Sağlık Puanı — RAM, disk, açık kalma süresi, başlangıç uygulamaları ve geçici dosyalara göre 0-100 puan
+2) Geçici Dosya Temizleyici — Temp, Windows Temp, çökme dökümleri, hata raporları (yalnızca 1 günden eski dosyalar)
+3) DNS & Ağ Hızlandırıcı — DNS önbelleğini temizler, popüler DNS sunucularının gecikmesini ölçer
+4) Büyük Dosya Bulucu — seçtiğin klasördeki en büyük dosyaları listeler (hiçbir şey silmez)
+5) Arka Plan Uygulama Avcısı — RAM'i en çok kullanan uygulamaları listeler, seçileni kapatır (sistem işlemleri korumalıdır)
+6) Başlangıç Uygulamaları — Run kayıtları ve Başlangıç klasörünü listeler, yayıncı/etki tahmini sunar, kapattığını yedekleyerek geri açılabilir kılar
+7) Kayıtlı Wi-Fi Şifreleri — bu bilgisayara kayıtlı Wi-Fi ağlarının şifrelerini gösterir (varsayılan olarak gizlidir, GÖSTER'e basman gerekir)
+8) Geri Yükleme Noktası Oluştur — tek tıkla Windows Sistem Geri Yükleme noktası oluşturur
+9) Güç Planı Yöneticisi — Dengeli / Yüksek performans / Güç tasarrufu planları arasında geçiş yapar
+10) İnternet Hız Testi — indirme, yükleme ve gecikmeyi ölçer
+11) Pil Sağlığı Raporu — dizüstü bilgisayarlarda tasarım kapasitesi, güncel kapasite ve döngü sayısını gösterir
+12) Yinelenen Dosya Bulucu — aynı içeriğe sahip dosyaları bulur, boşa giden alanı gösterir (hiçbir şeyi silmez)
+13) Açık Ağ Bağlantıları — hangi uygulamanın hangi porta/adrese bağlı olduğunu listeler, tüm ağa açık portları işaretler
+14) Dosya Karma (Hash) Doğrulayıcı — MD5 / SHA-1 / SHA-256 hesaplar, yapıştırdığın karmayla karşılaştırır
+15) Sistem Dosyası Denetleyici (SFC) — bozuk Windows sistem dosyalarını denetler, istersen onarır
+16) Hosts Dosyası Denetimi — şüpheli yönlendirmeleri ve engellemeleri gösterir (yalnızca okur)
+
+Not:
+- Bazı bilgisayarlarda Windows/Defender bu programı yanlışlıkla virüs olarak işaretleyebilir (yanlış pozitif — "false positive"). Program kapalı kaynak bir çalıştırılabilir dosya değil, sıradan bir Python betiğidir; kaynağını incelemek istersen tüm .py dosyalarını herhangi bir metin düzenleyicide açabilirsin. Uyarı çıkarsa "Daha fazla bilgi" / "Yine de çalıştır" seçeneğini kullanabilir veya klasörü Defender hariç tutma (exclusion) listesine ekleyebilirsin.
+- Değişiklik yapmadan önce Windows geri yükleme noktası oluşturman önerilir.
