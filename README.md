@@ -1,6 +1,6 @@
 # T-Booster
 
-**Sürüm:** v1.0.8 &nbsp;•&nbsp; **Yapımcı:** TarikPro43391
+**Sürüm:** v1.1.0 (Beta) &nbsp;•&nbsp; **Yapımcı:** TarikPro43391
 
 T-Booster, Windows için sade ve hızlı bir performans/sistem bakım aracıdır. Tek bir pencereden; sistemini hızlandırmanı, donanımını incelemeni, gereksiz dosyaları temizlemeni ve geri alınabilir ayarlarla oynamanı sağlar. Kapalı kaynaklı bir `.exe` değil, sıradan bir Python programıdır — tüm kodu açık ve okunabilir.
 
@@ -13,7 +13,7 @@ T-Booster, Windows için sade ve hızlı bir performans/sistem bakım aracıdır
 
 Python 3 kurulu değilse program seni bilgilendirir. Elle çalıştırmak istersen:
 ```
-python T_BOOSTER_V1_0_8.py
+python T_BOOSTER_V1_1_0.py
 ```
 
 ### Gereksinimler
@@ -101,7 +101,7 @@ Kontrol Merkezi'nde canlı CPU/GPU/RAM/disk kartlarının yanında: **BIOS sür�
 |---|---|
 | `t-booster.bat` | Programı başlatır |
 | `T_BOOSTER_KISAYOL_OLUSTUR.bat` | Masaüstü kısayolu oluşturur |
-| `T_BOOSTER_V1_0_8.py` | Ana uygulama |
+| `T_BOOSTER_V1_1_0.py` | Ana uygulama |
 | `tb_core.py` | Çekirdek sistem/donanım modülü |
 | `tb_tools.py`, `tb_suite.py`, `tb_features.py` | Araç ve özellik modülleri |
 | `TB.ico`, `TB_logo.png` | Uygulama ikonu ve logosu |
